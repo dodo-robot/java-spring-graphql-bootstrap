@@ -8,12 +8,10 @@ clone te repo and run the following command
 
 ```
 gradle bootrun
-
 ```
 
 change database credentials in
 
 ```
  src/main/resources/application.properties
-
 ```
