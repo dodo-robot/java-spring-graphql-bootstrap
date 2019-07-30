@@ -25,7 +25,7 @@ public class Query implements GraphQLQueryResolver {
     public Book findBook(long id) throws BookNotFoundException {
         Optional<Book> optBook = bookRepository.findById(id);
         if(!optBook.isPresent()) throw new BookNotFoundException("Book not found!", id);
-        else return bookRepository.findById(id).get();
+        else return optBook.get();
     }
 
     public Iterable<Author> findAllAuthors() {
