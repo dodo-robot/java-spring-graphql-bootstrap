@@ -13,7 +13,7 @@ gradle bootrun
 
 change database credentials in
 
- - src
-    - main
-        - resources
-            - application.properties
+```
+ src/main/resources/application.properties
+
+```
